@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="903.0" prefWidth="839.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="903.0" fitWidth="839.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@Artboard%201%20copy.png" />
+         </image>
+      </ImageView>
+      <MenuBar prefHeight="25.0" prefWidth="839.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Criar Mapa">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#CriarChave" text="Criar o meu Mapa" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Informações">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Sobre" text="Sobre nós" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Ajuda">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Ajuda" text="Sobre o Jogo" />
+               </items>
+            </Menu>
+           
+         </menus>
+      </MenuBar>
+      <GridPane id="gridAdversario" fx:id="gridAdversario" alignment="TOP_CENTER" gridLinesVisible="false" layoutX="55.0" layoutY="121.0" prefHeight="98.0" prefWidth="95.0" AnchorPane.topAnchor="121.0">
+      </GridPane>
+      <GridPane id="gridPropria" fx:id="gridPropria" alignment="TOP_RIGHT" gridLinesVisible="false" layoutX="636.0" layoutY="552.0" prefHeight="81.0" prefWidth="73.0" translateX="30.0" translateY="5.0" AnchorPane.topAnchor="552.0">
+      </GridPane>
+      <Label fx:id="estadoJogo" layoutX="55.0" layoutY="29.0" text="Status" textFill="WHITE">
+         <font>
+            <Font name="Cooper Black" size="41.0" />
+         </font></Label>
+      <Label layoutX="640.0" layoutY="509.0" text="O MEU MAPA" textFill="WHITE">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="640.0" layoutY="311.0" text="O TEU NOME:" textFill="WHITE">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="nomeid" layoutX="664.0" layoutY="347.0" text="LABEL" textFill="WHITE">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Label>
+      <StackPane layoutX="13.0" layoutY="647.0" prefHeight="225.0" prefWidth="826.0">
+         <children>
+            <ImageView fitHeight="225.0" fitWidth="567.0" pickOnBounds="true" smooth="false" translateX="-100.0" translateY="20.0">
+               <image>
+                  <Image url="@Artboard%202.png" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#fecharJogo" prefHeight="83.0" prefWidth="173.0" style="-fx-background-color: WHITE;" text="SAIR" translateX="290.0" translateY="20.0">
+               <font>
+                  <Font name="Cooper Black" size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </StackPane>
+      <GridPane alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="561.0" prefWidth="50.0" translateY="20.0" AnchorPane.bottomAnchor="258.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="79.0" text="1" textFill="WHITE">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="63.0" prefWidth="79.0" text="2" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="73.0" prefHeight="63.0" prefWidth="79.0" text="3" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="136.0" prefHeight="63.0" prefWidth="79.0" text="4" textFill="WHITE" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="199.0" prefHeight="63.0" prefWidth="79.0" text="5" textFill="WHITE" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="262.0" prefHeight="63.0" prefWidth="79.0" text="6" textFill="WHITE" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="324.0" prefHeight="63.0" prefWidth="79.0" text="7" textFill="WHITE" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="386.0" prefHeight="77.0" prefWidth="50.0" text="10" textFill="WHITE" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="79.0" text="8" textFill="WHITE" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="79.0" text="9" textFill="WHITE" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane layoutX="10.0" layoutY="10.0" prefHeight="29.0" prefWidth="549.0" AnchorPane.bottomAnchor="790.0" AnchorPane.leftAnchor="50.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="66.0" text="A" textFill="WHITE">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="55.0" prefWidth="66.0" text="B" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="10.0" prefHeight="55.0" prefWidth="66.0" text="C" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="142.0" layoutY="10.0" prefHeight="55.0" prefWidth="66.0" text="D" textFill="WHITE" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="196.0" layoutY="10.0" prefHeight="55.0" prefWidth="66.0" text="E" textFill="WHITE" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="258.0" layoutY="10.0" prefHeight="55.0" prefWidth="66.0" text="F" textFill="WHITE" GridPane.columnIndex="5">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="321.0" layoutY="10.0" prefHeight="55.0" prefWidth="66.0" text="G" textFill="WHITE" GridPane.columnIndex="6">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="384.0" layoutY="10.0" prefHeight="55.0" prefWidth="66.0" text="H" textFill="WHITE" GridPane.columnIndex="7">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="66.0" text="I" textFill="WHITE" GridPane.columnIndex="8">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="66.0" text="J" textFill="WHITE" GridPane.columnIndex="9">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <ImageView fitHeight="98.0" fitWidth="150.0" layoutX="658.0" layoutY="159.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@Artboard%201%20copy%202.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

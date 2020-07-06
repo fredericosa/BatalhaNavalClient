@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="150.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="534.0" fitWidth="534.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Artboard%201.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" text="Aguardar o Adversario..." textFill="WHITE" translateY="20.0">
+         <font>
+            <Font name="Cooper Black" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</StackPane>
